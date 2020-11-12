@@ -75,6 +75,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
+# Privapp Whitelist
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-X2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-X2.xml \
+    $(LOCAL_PATH)/configs/privapp-permissions-X2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-X2.xml \
+    $(LOCAL_PATH)/configs/privapp-permissions-X2.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-X2.xml
+    
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
