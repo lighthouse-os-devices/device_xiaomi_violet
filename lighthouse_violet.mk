@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2018-2020 The LineageOS Project
 # Copyright (C) 2020 The PixelExperience Project
+# Copyright (C) 2021 Project Lighthouse
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,7 +13,7 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/lighthouse/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
-LIGHTHOUSE_BUILD_TYPE= OFFICIAL
+LIGHTHOUSE_BUILD_TYPE := OFFICIAL
 
 # GAPPS
 WITH_GAPPS := true

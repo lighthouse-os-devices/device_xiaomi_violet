@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2018-2020 The LineageOS Project
 # Copyright (C) 2020 The PixelExperience Project
+# Copyright (C) 2021 Project Lighthouse
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -20,7 +21,7 @@ $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-potato
+    $(LOCAL_PATH)/overlay-lighthouse
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -77,9 +78,9 @@ PRODUCT_COPY_FILES += \
 
 # Privapp Whitelist
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-X2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-X2.xml \
-    $(LOCAL_PATH)/configs/privapp-permissions-X2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-X2.xml \
-    $(LOCAL_PATH)/configs/privapp-permissions-X2.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-X2.xml
+    $(LOCAL_PATH)/configs/privapp-permissions-violet.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-violet.xml \
+    $(LOCAL_PATH)/configs/privapp-permissions-violet.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-violet.xml \
+    $(LOCAL_PATH)/configs/privapp-permissions-violet.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-violet.xml
     
 # AID/fs configs
 PRODUCT_PACKAGES += \
