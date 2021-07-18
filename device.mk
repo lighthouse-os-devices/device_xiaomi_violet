@@ -337,14 +337,11 @@ PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
-<<<<<<< HEAD
-=======
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client \
     vendor.qti.hardware.perf@2.0.vendor
 
->>>>>>> 396edc76 (violet: Create dummy libqti-perfd-client)
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.sm6150-libperfmgr \
